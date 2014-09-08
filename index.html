@@ -11,6 +11,7 @@
   <script src="lib/asteroid.js"></script>
   <script src="lib/game.js"></script>
   <script src="lib/gameView.js"></script>
+  <script src="lib/ship.js"></script>
 
   <script>
     var canvasEl = document.getElementById("game-canvas"); 
@@ -21,10 +22,12 @@
     
     var game = new Asteroids.Game();
     
-    new Asteroids.GameView(
+    var gv = new Asteroids.GameView(
       canvasEl.getContext("2d"), 
       game
-    ).start()// (canvasEl.getContext("2d"), game);
+    )
+    
+    gv.start()// (canvasEl.getContext("2d"), game);
   </script> 
 
 
