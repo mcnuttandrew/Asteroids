@@ -11,36 +11,24 @@
   <script src="lib/game.js"></script>
   <script src="lib/gameView.js"></script>
   <script src="lib/ship.js"></script>
-<<<<<<< HEAD
+
   <script src="lib/bullet.js"></script>
-=======
->>>>>>> 4a61cc6d6dfc374f01d85d0c4432e21e4084660a
   <script src="lib/keymaster-master/keymaster.js"></script>
   
   <script>
     var canvasEl = document.getElementById("game-canvas"); 
     canvasEl.height = 1000; //DRY OUT
     canvasEl.width = 1000;
-<<<<<<< HEAD
-=======
-    // var aster = new Asteroids.Asteroid([100,100]);
-//     aster.draw(canvasEl.getContext("2d"));
-    
->>>>>>> 4a61cc6d6dfc374f01d85d0c4432e21e4084660a
     var game = new Asteroids.Game();
     
     var gv = new Asteroids.GameView(
       canvasEl.getContext("2d"), 
       game
-<<<<<<< HEAD
     );
     gv.start();
-=======
-    )
+
     
-    gv.start()// (canvasEl.getContext("2d"), game);
->>>>>>> 4a61cc6d6dfc374f01d85d0c4432e21e4084660a
-  </script> 
+   </script> 
 
 
 </body>
